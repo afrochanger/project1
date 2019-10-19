@@ -1,0 +1,245 @@
+/* Andy Clarke's reset styles. See Transcending CSS or Chapter 4 or Web Standards Creativity. This strips preset styles from all elements.*/
+
+/* Normalizes margin, padding */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td 
+{ margin: 0; padding: 0; }
+
+/* Normalizes font-size for headers */
+h1,h2,h3,h4,h5,h6 { font-size: 100%; }
+
+/* Removes list-style from lists */
+ol,ul { list-style: none; }
+
+/* Normalizes font-style and font-weight to normal */
+dt, address, caption, cite, code, dfn, em, strong, th, var
+{ font-style: normal; font-weight: normal; }
+
+/* Removes padding and spacing in tables */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Removes border from fieldset and img */
+fieldset,img { border: 0; }
+
+/* Left-aligns text in caption and th */
+caption,th { text-align: left; }
+
+/* Removes quotation marks from q */
+q:before, q:after { content:''; }
+
+
+/**Global**/
+
+body {
+  text-align: center;
+  font: 72.5%/1.5 Helvetica, Arial, Verdana, sans-serif; 
+  color: #444444;
+  background-color: #fff;
+  }
+
+h1 {
+	font-size: 220%;
+	font-weight: normal;
+	/*color: #001344;*/
+	color: #e20000;
+	/*padding: 10px 0 0 0;*/
+	padding: 3px 0 0 0;
+	margin-bottom: 10px;
+	}
+
+h2 {
+	/*font-size: 200%;*/
+	font-size: 100%; 
+	/*font-weight: normal;*/
+	font-weight: bold;
+	/*color: #e20000;*/
+	color: #001344;
+	/*margin: 0 0 10px 0;*/
+	margin: 0 0 1px 0;
+	}
+
+h3 {
+	font-size: 110%;
+	font-weight: normal;
+	margin: 15px 0 0 0;
+		}
+
+h4 {
+	font-size: 100%;
+	margin: 5px 0;
+	padding: 0;
+	}
+
+p, dt, dd, ul {
+  margin: 0 0 10px 0;}
+
+
+strong {
+	font-weight: bold;
+	color: #001344;
+}
+
+strong a:link, strong a:visited, strong a:active, strong a:hover {color: #001344;}
+
+p#info {clear: both; color: #001344; margin: 0 0 -5px 0}
+
+em {color: #e20000; font-weight: bold; font-style: normal; }
+
+
+/**Template skin**/
+
+/* =container_outer */
+div#container_outer {
+  width: 690px;
+  /*background: #fff url(images/ibmsg_bg_top.gif) top left no-repeat;*/
+  margin: 0 auto;
+  text-align: left;
+  float: left;
+  }
+
+/* =container_inner */
+div#container_inner {
+  width: 690px;
+  /*background: #fff url(images/ibmsg_bg_btm.gif) top left no-repeat;*/
+  float: left;
+
+  
+  }
+
+/* =ibmsg_masthead */
+div#ibmsg_masthead {
+  width: 690px;
+  height: 86px;
+  background: url(../images/ibmsg_masthead1.jpg) top left no-repeat;
+  }
+div#ibmsg_masthead_ib {
+  width: 690px;
+  height: 86px;
+  background: url(../images/ibmsg_masthead650.jpg) top left no-repeat;
+  }
+/* =ibmsg_info */
+div#ibmsg_info {
+  width: 690px;
+  height: 24px;
+  background: #001344 url(../images/ibmsg_info650.jpg) top left no-repeat;
+  margin-top: -12px;
+  clear: both;
+}
+
+div#ibmsg_info p {color: #ffffff; font-size: 110%; padding: 15px 0 0 30px;}
+
+/* =content */
+div#content {
+  background: url(../images/ibmsg_bg_1px650.gif) top left repeat-y;
+  margin: 0;
+  padding: 0 20px;
+  float: left;
+  width: 655px;
+  }
+
+/* =content_wrapper */
+/*div#content_wrapper {
+    background: url(images/ibmsg_mouse_bg.gif) bottom right no-repeat;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 534px;
+  }*/
+
+/* =content_main */
+div#content_main {
+  float: left;
+  margin: 0;
+  width: 500px;
+  text-align: justify;
+  }
+
+div.important {
+  color: #444444;
+  border-top: 1px dotted #001344;
+  border-bottom: 1px dotted #001344;
+  padding: 0 3px 3px 3px;
+  margin-top: 5px;
+  margin-right: 10px;
+  /*width: 120px;*/
+  width: 110px;
+  float: right;
+}
+
+div.important p {
+	line-height:1.3;
+	margin: 0;
+	/*padding: 0 2px;*/
+	padding-left: 2px;
+	font-size: 95%;
+	text-align: justify;
+}
+
+div.important h3 {
+	color: #001344;
+	font-weight: bold;
+	/*margin: 0 0 2px 0;*/
+	margin: 0 0 0 -1px;
+	padding: 5px 0 0 1px;
+	line-height: 1;
+}
+
+div.important ul {
+ list-style: disc;
+ margin-left: 15px;
+ font-size: 95%;
+ }
+
+/* =ostt */
+
+div#ost div#ibmsg_masthead {
+  width: 690px;
+  height: 86px;
+  background: url(../images/ibmsg_mastheadost1.jpg) top left no-repeat;
+  }
+
+div#ost div#ibmsg_info {
+  width: 690px;
+  height: 24px;
+  background: #b70136 url(../images/ibmsg_infoost1.jpg) top left no-repeat;
+  margin-top: -12px;
+  clear: both;
+}
+
+div#ost h1 {
+	font-size: 200%; 
+	font-weight: normal;
+	color: #b70136;
+	margin: 0 0 10px 0;
+	}
+div#ost h3 {
+	font-size: 150%; 
+	font-weight: normal;
+	color: #001344;
+	margin: 0 0 10px 0;
+	clear: both;
+	}
+div#ost h3 a {color: #001344;}
+	
+div#ost strong {
+	font-weight: bold;
+	color: #b70136;
+}
+
+div#ost div.important p {
+  padding-top: 3px;
+  color: #001344;
+  font-size: 100%;
+  }
+
+div#ost div.important p.moreinfo, div#ost div.important p.moreinfo a {
+  color: #001344;
+  }
+
+div#ost div.important p.moreinfo{   
+  border-top: 1px dotted #001344;
+  margin-top: 5px;
+  }
+
+div#ost div#ibmsg_info p {color: #ffffff; font-size: 160%; padding: 15px 0 0 30px;}
+
+div#ost div#ibmsg_info p a {color: #ffffff;}
